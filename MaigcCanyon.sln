@@ -3,6 +3,10 @@ Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MaigcCanyon", "Assembly-CSharp.csproj", "{46A75006-5BBF-F29B-02A9-06DDD5872ABB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MaigcCanyon", "Assembly-CSharp-firstpass.csproj", "{02BDF344-AF4B-4C1C-C86A-DB56DC647FED}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MaigcCanyon", "Assembly-CSharp-Editor.csproj", "{D79B5F1E-2679-7E7D-0461-630855FB8AB4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -13,6 +17,14 @@ Global
 		{46A75006-5BBF-F29B-02A9-06DDD5872ABB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{46A75006-5BBF-F29B-02A9-06DDD5872ABB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{46A75006-5BBF-F29B-02A9-06DDD5872ABB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{02BDF344-AF4B-4C1C-C86A-DB56DC647FED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{02BDF344-AF4B-4C1C-C86A-DB56DC647FED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{02BDF344-AF4B-4C1C-C86A-DB56DC647FED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{02BDF344-AF4B-4C1C-C86A-DB56DC647FED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D79B5F1E-2679-7E7D-0461-630855FB8AB4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D79B5F1E-2679-7E7D-0461-630855FB8AB4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D79B5F1E-2679-7E7D-0461-630855FB8AB4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D79B5F1E-2679-7E7D-0461-630855FB8AB4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

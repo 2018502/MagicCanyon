@@ -53,17 +53,42 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\ExternalLibraries\ExternalBase.cs" />
+     <Compile Include="Assets\GameAssets\Animations\AnimationBase.cs" />
+     <Compile Include="Assets\GameAssets\Materials\MaterialBase.cs" />
+     <Compile Include="Assets\GameAssets\Models\ModelBase.cs" />
+     <Compile Include="Assets\GameAssets\Prefabs\PrefabBase.cs" />
+     <Compile Include="Assets\GameAssets\Sounds\SoundBase.cs" />
+     <Compile Include="Assets\GameAssets\Textures\TextureBase.cs" />
+     <Compile Include="Assets\GameAssets\UI\UIBase.cs" />
+     <Compile Include="Assets\Resources\ResourceBase.cs" />
+     <Compile Include="Assets\Scenes\SceneBase.cs" />
+     <Compile Include="Assets\Scripts\AI\DecisionTree\DTBase.cs" />
      <Compile Include="Assets\Scripts\AI\StateMachine\FSM\IState.cs" />
      <Compile Include="Assets\Scripts\AI\StateMachine\FSM\IStateMachine.cs" />
      <Compile Include="Assets\Scripts\AI\StateMachine\FSM\ITransition.cs" />
      <Compile Include="Assets\Scripts\AI\StateMachine\FSM\SUNState.cs" />
      <Compile Include="Assets\Scripts\AI\StateMachine\FSM\SUNStateMachine.cs" />
      <Compile Include="Assets\Scripts\AI\StateMachine\FSM\SUNTransition.cs" />
- <Reference Include="Unity.PackageManagerUI.Editor">
- <HintPath>D:/UnityProject/MaigcCanyon/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
- </Reference>
+     <Compile Include="Assets\Scripts\Camera\CameraBase.cs" />
+     <Compile Include="Assets\Scripts\CustomShader\ShaderBase.cs" />
+     <Compile Include="Assets\Scripts\EventSystem\EventBase.cs" />
+     <Compile Include="Assets\Scripts\Net\IM\IMBase.cs" />
+     <Compile Include="Assets\Scripts\Object\ObjectBase.cs" />
+     <Compile Include="Assets\Scripts\Other\AD\ADBase.cs" />
+     <Compile Include="Assets\Scripts\Other\Adaptive\AdapBase.cs" />
+     <Compile Include="Assets\Scripts\Plot\PlotBase.cs" />
+     <Compile Include="Assets\Scripts\PostProcessing\PostBase.cs" />
+     <Compile Include="Assets\Scripts\Scene\SceneController.cs" />
+     <Compile Include="Assets\Scripts\SpecialEffects\SpecialBase.cs" />
+     <Compile Include="Assets\Scripts\Tuition\TuitBase.cs" />
+     <Compile Include="Assets\Scripts\UI\UIController.cs" />
+     <Compile Include="Assets\Scripts\Util\UtilBase.cs" />
  <Reference Include="UnityEditor.StandardEvents">
  <HintPath>D:/UnityProject/MaigcCanyon/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.PackageManagerUI.Editor">
+ <HintPath>D:/UnityProject/MaigcCanyon/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.AIModule">
  <HintPath>E:/Unity2018-1-6/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -296,6 +321,10 @@
  <Reference Include="Boo.Lang">
  <HintPath>E:/Unity2018-1-6/Editor/Data/MonoBleedingEdge/lib/mono/unity/Boo.Lang.dll</HintPath>
  </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
+      <Project>{02BDF344-AF4B-4C1C-C86A-DB56DC647FED}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
