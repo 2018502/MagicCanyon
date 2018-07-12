@@ -11,19 +11,19 @@ public class MapIndexClick : MonoBehaviour
 
     private MapSelector mapSelector;
 
-    public void setMapSelector(MapSelector mapSelector)
+    public void SetMapSelector(MapSelector mapSelector)
     {
         this.mapSelector = mapSelector;
     }
 
-    public void setIndex(int index)
+    public void SetIndex(int index)
     {
         selfIndex = index;
         indexText.text = (selfIndex + 1).ToString();
     }
 
-    public void onClick()
+    public void OnClick()
     {
-        mapSelector.chooseMap(selfIndex);
+        mapSelector.ChooseMap(selfIndex);
     }
 }

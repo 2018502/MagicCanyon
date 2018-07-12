@@ -8,16 +8,15 @@ public class MapEditor : MonoBehaviour
     // 地图
     public Image mapImage;
     // 可放置网格
-    public GridLayoutGroup placeableGrid;
+    public GridLayoutGroup mapGrid;
     // 可放置格子预制体
-    public GameObject placeableCellPrefab;
+    public GameObject cellPrefab;
 
     private float mapWidth, mapHeight;
-    private RectTransform mapImageTrans;
 
     void Start()
     {
-        mapImageTrans = mapImage.GetComponent<RectTransform>();
+        RectTransform mapImageTrans = mapImage.GetComponent<RectTransform>();
         mapWidth = mapImageTrans.rect.width;
         mapHeight = mapImageTrans.rect.height;
     }
@@ -25,7 +24,7 @@ public class MapEditor : MonoBehaviour
     /*
 	 * 给虚拟地图设置图片
 	 */
-    public void setMapImage(Sprite mapSprite)
+    public void SetMapImage(Sprite mapSprite)
     {
         mapImage.sprite = mapSprite;
     }
@@ -33,21 +32,22 @@ public class MapEditor : MonoBehaviour
     /*
 	 * 给虚拟地图设置网格
 	 */
-    public void setMapGrid(int rawCount, int columnCount)
+    public void CreateCell(int rawCount, int columnCount)
     {
-        CommonUtils.destroyAllChildren(placeableGrid.gameObject);
+        CommonUtils.destroyAllChildren(mapGrid.gameObject);
 
         // 计算每格宽高
-        float cellWidth = (mapWidth - placeableGrid.spacing.x * (columnCount - 1)) / columnCount;
-        float cellHeight = (mapHeight - placeableGrid.spacing.y * (rawCount - 1)) / rawCount;
+        float cellWidth = (mapWidth - mapGrid.spacing.x * (columnCount - 1)) / columnCount;
+        float cellHeight = (mapHeight - mapGrid.spacing.y * (rawCount - 1)) / rawCount;
 
-        placeableGrid.cellSize = new Vector2(cellWidth, cellHeight);
+        mapGrid.cellSize = new Vector2(cellWidth, cellHeight);
 
         for (int i = 0; i < rawCount; i++)
         {
             for (int j = 0; j < columnCount; j++)
             {
-                GameObject placeableCellObj = Instantiate(placeableCellPrefab, placeableGrid.transform);
+                // 生成可放置格子
+                GameObject cellObj = Instantiate(cellPrefab, mapGrid.transform);
             }
         }
     }
