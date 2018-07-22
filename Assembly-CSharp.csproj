@@ -62,6 +62,7 @@
      <Compile Include="Assets\GameAssets\Textures\TextureBase.cs" />
      <Compile Include="Assets\GameAssets\UI\UIBase.cs" />
      <Compile Include="Assets\Resources\ResourceBase.cs" />
+<<<<<<< HEAD
      <Compile Include="Assets\Scripts\kbescripts\Account.cs" />
      <Compile Include="Assets\Scripts\kbescripts\clientapp.cs" />
      <Compile Include="Assets\Scripts\kbescripts\FirstEntity.cs" />
@@ -89,6 +90,35 @@
      <Compile Include="Assets\Scripts\u3dscripts\UI\MapController.cs" />
      <Compile Include="Assets\Scripts\u3dscripts\UI\UIController.cs" />
      <Compile Include="Assets\Scripts\u3dscripts\Util\UtilBase.cs" />
+=======
+     <Compile Include="Assets\Scenes\SceneBase.cs" />
+     <Compile Include="Assets\Scripts\AI\DecisionTree\DTBase.cs" />
+     <Compile Include="Assets\Scripts\AI\StateMachine\FSM\IState.cs" />
+     <Compile Include="Assets\Scripts\AI\StateMachine\FSM\IStateMachine.cs" />
+     <Compile Include="Assets\Scripts\AI\StateMachine\FSM\ITransition.cs" />
+     <Compile Include="Assets\Scripts\AI\StateMachine\FSM\SUNState.cs" />
+     <Compile Include="Assets\Scripts\AI\StateMachine\FSM\SUNStateMachine.cs" />
+     <Compile Include="Assets\Scripts\AI\StateMachine\FSM\SUNTransition.cs" />
+     <Compile Include="Assets\Scripts\Camera\CameraBase.cs" />
+     <Compile Include="Assets\Scripts\CustomShader\ShaderBase.cs" />
+     <Compile Include="Assets\Scripts\EventSystem\EventBase.cs" />
+     <Compile Include="Assets\Scripts\Net\IM\IMBase.cs" />
+     <Compile Include="Assets\Scripts\Object\ObjectBase.cs" />
+     <Compile Include="Assets\Scripts\Other\AD\ADBase.cs" />
+     <Compile Include="Assets\Scripts\Other\Adaptive\AdapBase.cs" />
+     <Compile Include="Assets\Scripts\Plot\PlotBase.cs" />
+     <Compile Include="Assets\Scripts\PostProcessing\PostBase.cs" />
+     <Compile Include="Assets\Scripts\Scene\SceneController.cs" />
+     <Compile Include="Assets\Scripts\SpecialEffects\SpecialBase.cs" />
+     <Compile Include="Assets\Scripts\Tuition\TuitBase.cs" />
+     <Compile Include="Assets\Scripts\UI\MapEditor.cs" />
+     <Compile Include="Assets\Scripts\UI\MapIndexClick.cs" />
+     <Compile Include="Assets\Scripts\UI\MapSelector.cs" />
+     <Compile Include="Assets\Scripts\UI\PlaceableSelector.cs" />
+     <Compile Include="Assets\Scripts\UI\UIController.cs" />
+     <Compile Include="Assets\Scripts\Util\CommonUtils.cs" />
+     <Compile Include="Assets\Scripts\Util\UtilBase.cs" />
+>>>>>>> 0033608ece495007c58ef5ed57f43f811a9c7159
  <Reference Include="UnityEditor.StandardEvents">
  <HintPath>D:/UnityProject/MaigcCanyon/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
  </Reference>
